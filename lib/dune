@@ -1,0 +1,12 @@
+(library
+ (name utlc)
+ (modules utlc utlc_lex utlc_yacc utlc_ast)
+ ; (modules utlc utlc_yacc utlc_ast)
+ (libraries menhirLib)
+)
+
+(ocamllex
+ (modules utlc_lex))
+
+(menhir
+ (modules utlc_yacc))

@@ -1,0 +1,8 @@
+(executable
+ (name main)
+ (modules main)
+ (libraries utlc))
+
+(install
+ (section bin)
+ (files (main.exe as main)))

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+name: "play"
+version: "~dev"
+synopsis: ""
+maintainer: "emliunix <emliunix@hotmail.com>"
+authors: "emliunix <emliunix@hotmail.com>"
+license: ""
+homepage: ""
+bug-reports: ""
+depends: [
+  "dune" {>= "1.6"}
+]
+build: [
+  ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+install: [make "install"]
+dev-repo: "git+https://"
+url {
+  src: "file:///home/liu/ocaml/play"
+}
